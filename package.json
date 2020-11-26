@@ -1,0 +1,19 @@
+{
+  "name": "imker-pwa",
+  "version": "1.0.0",
+  "description": "Du bist Imker aus Leidenschaft? Dann bist du genau richtig hier!",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8091"
+  },
+  "keywords": [
+    "pwa"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "firebase": "^8.1.1"
+  }
+}
