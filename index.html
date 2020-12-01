@@ -62,6 +62,21 @@
     <p><small>Demo based on <a href="https://www.html5rocks.com/en/tutorials/device/orientation/" 
       target="_blank" rel="noopener">HTML5 Rocks</a> article.</small></p>
   </div>
+
+  <p>
+    <label>Engine</label>
+  </p>
+  <div role="group" id="selectEngine">
+    <input type="radio" name="engine" value="localStorage" checked/> Persistent Storage
+    <input type="radio" name="engine" value="sessionStorage"/> Per-Session Storage
+  </div>
+  
+  <p>
+    <label for="value">Value for <code>myKey</code></label>
+    <input type="text" id="value">
+  </p>
+  
+  <p>Open the example in another tab and change the value there to see the synchronization via <code>storage</code> event.</p>
   
   <script src="scripts/app.js" async></script>
 </body>
