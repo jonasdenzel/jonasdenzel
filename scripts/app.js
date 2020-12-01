@@ -73,6 +73,14 @@
       target.innerText = 'Geolocation API not supported.'; 
     }
 
+
+
+
+
+
+
+    // Bild im Cache:
+
     if ('LinearAccelerationSensor' in window && 'Gyroscope' in window) {
       document.getElementById('moApi').innerHTML = 'Generic Sensor API';
       
