@@ -79,6 +79,15 @@
   
   <p>Open the example in another tab and change the value there to see the synchronization via <code>storage</code> event.</p>
   
+
+  <h1>Local Notification</h1>
+  <p>Current permission status is <b id="status">unavailable</b>.</p>
+
+<p><button onclick="requestPermission()">Request permission</button></p>
+<p><button onclick="nonPersistentNotification()">Non-persistent notification</button></p>
+<p><button onclick="persistentNotification()">Persistent notification</button></p>
+
+
   <script src="scripts/app.js" async></script>
 </body>
 </html>
