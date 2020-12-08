@@ -20,69 +20,11 @@
 </head>
 <body>
   
-  <div class="columns">
-    <div class="column">
-      <p><button type="button" onclick="getStream('video')">Grab video</button></p>
-      
-      <video controls autoplay style="height:180px; width: 240px;"></video>
-    </div>
-    <div class="column">
-      <p><button type="button" onclick="getStream('audio')">Grab audio</button></p>
-      
-      <audio controls></audio>
-    </div>
-    <div class="column">
-      <p><button id="askButton">Ask for location</button></p>
-        <div id="target"></div>
-    </div>
-  </div>
-  <div class="column"> 
-    <table>
-      <tr>
-        <td>API used</td>
-        <td id="moApi"></td>
-      </tr>
-      <tr>
-        <td>linear acceleration (excl. gravity)</td>
-        <td id="moAccel"></td>
-      </tr>
-      <tr>
-        <td>acceleration incl. gravity</td>
-        <td id="moAccelGrav"></td>
-      </tr>
-      <tr>
-        <td>rotation rate</td>
-        <td id="moRotation"></td>
-      </tr>
-      <tr>
-        <td>interval (ms)</td>
-        <td id="moInterval"></td>
-      </tr>
-    </table>
-    <p><small>Demo based on <a href="https://www.html5rocks.com/en/tutorials/device/orientation/" 
-      target="_blank" rel="noopener">HTML5 Rocks</a> article.</small></p>
-  </div>
-
-  <p>
-    <label>Engine</label>
-  </p>
-  <div role="group" id="selectEngine">
-    <input type="radio" name="engine" value="localStorage" checked/> Persistent Storage
-    <input type="radio" name="engine" value="sessionStorage"/> Per-Session Storage
-  </div>
-  
-  <p>
-    <label for="value">Value for <code>myKey</code></label>
-    <!-- <input type="text" id="value"> -->
-    <p><button type="button" onclick="getStream('video')">Grab video</button></p>
-  </p>
-  
- 
 <div>
   <h1>Local Notification</h1>
   <p>Current permission status is <b id="status">unavailable</b></p>
 
-  
+
 <p><button onclick="requestPermission()">Request permission</button></p>
 <p><button onclick="nonPersistentNotification()">Non-persistent notification</button></p>
 <p><button onclick="persistentNotification()">Persistent notification</button></p>
