@@ -194,9 +194,9 @@
   }
 
 
-  //Notification
+//Notification
 
-  var $status = document.getElementById('status');
+var $status = document.getElementById('status');
 
 if ('Notification' in window) {
   $status.innerText = Notification.permission;
