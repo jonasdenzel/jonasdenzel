@@ -19,9 +19,13 @@
   <meta name="msapplication-TileColor" content="#2F3BA2">
 </head>
 <body>
+    <!-- Bild im Cache Start -->
+    <div id="bild">
     <h1>Save images to Local Storage</h1>
     <input type="file" id="myFileInput">
     <img id="imgPreview" src="" alt="Preview">
+    </div>
+    
     <script>
       document.querySelector("#myFileInput").addEventListener("change", function () {
           const reader = new FileReader();
@@ -38,11 +42,11 @@
         const recentImageDataUrl = localStorage.getItem("recent-image");
 
         if(recentImageDataUrl) {
-          document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl);
+          document.querySelector("#imgPreview").setAttribute("src",  recentImageDataUrl);
         }
       })
     </script>
- 
+    <!-- Bild im Cache Ende -->
 
   <script src="scripts/app.js" async></script>
 </body>
