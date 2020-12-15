@@ -6,3 +6,7 @@
     border-radius: 3px;
     border-style: solid;
 }
+
+img {
+  max-width: 100px;
+}
