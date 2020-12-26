@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamera und Audio PWA</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-messaging.js"></script>
+</head>
+<body>
+    <!-- Bild im Cache Start -->
+    <!-- <div id="bild">
+    <h1>Save Image</h1>
+    <input type="file" id="myFileInput">
+    <img id="imgPreview" src="" alt="Preview">
+    </div>
+    
+    <script>
+      document.querySelector("#myFileInput").addEventListener("change", function () {
+          const reader = new FileReader();
+
+          reader.addEventListener("load", () => {
+            localStorage.setItem("recent-image", reader.result);
+          })
+
+          reader.readAsDataURL(this.files[0]);
+
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const recentImageDataUrl = localStorage.getItem("recent-image");
+
+        if(recentImageDataUrl) {
+          document.querySelector("#imgPreview").setAttribute("src",  recentImageDataUrl);
+        }
+      })
+    </script> -->
+    <!-- Bild im Cache Ende -->
+
+    <div>
+      <p>Works</p>
+    </div>
+    
+
+  <!-- <script src="scripts/app.js" async></script> -->
+</body>
+</html>
